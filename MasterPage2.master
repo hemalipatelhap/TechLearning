@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs"
+    Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css2/style.css">
+    <link rel="stylesheet" href="css2/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="css2/main.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div style="background-image: url('bg3.png'); background-size: cover; background-repeat: no-repeat">
+        <div style="background-color: black; opacity: 0.8;">
+            <br />
+            <br />
+            <form id="form1" runat="server">
+            <div style="margin-left:80px">
+             <asp:Image ID="Image2" Height="80px" Width="260px" ImageUrl="~/logo.png" runat="server"></asp:Image>
+             </div>
+             <div>
+             <br />
+            <br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
